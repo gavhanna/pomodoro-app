@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw; }
+
+.roundyCorners {
+  border-radius: 20px; }
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+button {
+  font-size: 2rem;
+  border: 0px;
+  background-color: transparent; }
+
+#counters {
+  display: flex;
+  flex-wrap: wrap; }
+  #counters span, #counters button {
+    margin: 10px; }
+
+#breakTime, #workTime {
+  font-size: 2rem; }
+
+#reset {
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 20px; }
+
+#timerContainer {
+  border: 8px solid red;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#timerCircle {
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: auto; }
+  #timerCircle h3 {
+    width: 100%;
+    margin-top: 15%;
+    text-align: center; }
+  #timerCircle #timer {
+    margin-top: 10%;
+    flex: 1;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    font-size: 6rem; }
+
+#controls {
+  display: flex;
+  flex-direction: column; }
+  #controls button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .2s; }
+  #controls #start {
+    background-color: skyblue; }
+    #controls #start:hover {
+      background: white;
+      color: #30aadc;
+      border: 5px solid skyblue;
+      margin: 5px auto; }
+  #controls #pause {
+    background-color: #e05a5a; }
+    #controls #pause:hover {
+      background: white;
+      color: firebrick;
+      border: 5px solid firebrick;
+      margin: 5px auto; }
+  #controls #resume {
+    background: #4dff4d; }
+    #controls #resume:hover {
+      background: white;
+      color: #00e600;
+      border: 5px solid #00e600;
+      margin: 5px auto; }
+
+/*# sourceMappingURL=main.css.map */

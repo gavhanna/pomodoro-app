@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://use.fontawesome.com/712f80daf2.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body><div id="wrapper">
+  <div id="counters">
+    <span id="break">
+      <button id="breakMinus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+      <span id="breakTime">5</span>
+      <button id="breakPlus"><i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+    </span>
+    <!-- <button id="reset">Reset Timers</button> -->
+    <span id="work">
+      <button id="workMinus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+      <span id="workTime">25</span>
+      <button id="workPlus"><i class="fa fa-plus" aria-hidden="true"></i>
+</button></span>
+  </div>
+  <div id="timerContainer">
+    <div id="timerCircle">
+      <h3>Click Start to... start</h3>
+      <span id="timer">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </span>
+    </div>
+  </div>
+  <span id="controls">
+    <button class="roundyCorners" id="start">Start</button>
+  </span>
+</div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
