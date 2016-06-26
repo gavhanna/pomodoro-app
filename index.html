@@ -12,20 +12,7 @@
   <h1 id="title">Pomodoro
     <span>Taste the tomato flavoured rainbow!</span>
   </h1>
-  <div id="counters">
-    <span id="break">
-      <button id="breakMinus"><i class="fa fa-minus" aria-hidden="true"></i></button>
-      <span id="breakTime">5</span>
-      <button id="breakPlus"><i class="fa fa-plus" aria-hidden="true"></i>
-</button>
-    </span>
-    <!-- <button id="reset">Reset Timers</button> -->
-    <span id="work">
-      <button id="workMinus"><i class="fa fa-minus" aria-hidden="true"></i></button>
-      <span id="workTime">25</span>
-      <button id="workPlus"><i class="fa fa-plus" aria-hidden="true"></i>
-</button></span>
-  </div>
+
   <div id="timerContainer">
     <div id="timerCircle">
       <h3>Click to start</h3>
@@ -34,8 +21,26 @@
       </span>
     </div>
   </div>
+  <div id="counters">
+    <span id="break">
+      <button id="breakMinus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+      <span id="breakTime">5</span>
+      <span class="description">Break Length</span>
+      <button id="breakPlus"><i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </span>
+        <!-- <button id="reset">Reset Timers</button> -->
+    <span id="work">
+      <button id="workMinus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+      <span id="workTime">25</span>
+      <span class="description">Work Length</span>
+      <button id="workPlus"><i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </span>
+  </div>
   <span id="controls">
-    <button class="roundyCorners" id="start">Start</button>
+    <!-- <button class="roundyCorners" id="start">Start</button> -->
+    <a id="restart" href="index.html">Restart App</a>
   </span>
 </div>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>

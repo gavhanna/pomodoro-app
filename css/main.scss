@@ -1,4 +1,4 @@
-$background: white;
+$background: #FCFBE3;
 $text: black;
 $button: #000;
 $border: #000;
@@ -37,7 +37,7 @@ body {
 #title {
   font-family: 'Lobster', cursive;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   color: $text;
   font-size: 4rem;
   font-weight: lighter;
@@ -69,9 +69,6 @@ button {
     margin: 10px;
     color: $button;
   }
-  span {
-
-  }
   button {
     color: $border;
     cursor: pointer;
@@ -86,6 +83,17 @@ button {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   border-radius: 20px;
+  position: relative;
+}
+
+.description {
+  position: absolute;
+  font-size: 0.8rem;
+  width: 100%;
+  bottom: -10px;
+  left: -5px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 #timerContainer {
@@ -142,23 +150,44 @@ button {
 #controls {
   display: flex;
   flex-direction: column;
+  position: relative;
   button {
     margin: 10px auto;
     padding: 10px 20px;
     cursor: pointer;
 
   }
-  #start {
-    font-family: Lobster;
-    font-weight: lighter;
-    background-color: $border;
-    border: 5px solid $background;
+
+  // #start {
+  //   font-family: Lobster;
+  //   font-weight: lighter;
+  //   background-color: $border;
+  //   border: 5px solid $background;
+  //   transition: all .3s;
+  //   color: $background;
+  //   &:hover {
+  //     background: $background;
+  //     color: $text;
+  //     border: 5px solid $text;
+  //   }
+  // }
+
+  #restart {
+    text-decoration: none;
+    color: $text;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 0.8rem;
     transition: all .3s;
-    color: $background;
+    width: 100px;
     &:hover {
-      background: $background;
-      color: $text;
-      border: 5px solid $text;
+      background: tomato;
+      border: 2px solid black;
+      width: 120px;
+      border-radius: 0;
     }
   }
 }

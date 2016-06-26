@@ -91,3 +91,12 @@ var playPause = function(){
 }
 $("#start").click(playPause);
 $("#timerCircle").click(playPause);
+
+// Other stuff
+
+
+$("#restart").hover(function(){
+    $(this).text("For sure?")
+}, function() {
+    $(this).text("Restart App")
+});
