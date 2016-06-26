@@ -116,6 +116,7 @@ button {
 }
 
 #timerCircle {
+  position: relative;
   background: radial-gradient(ellipse at center, $background 1%, red 100%);
   cursor: pointer;
   margin-top: 10px;
@@ -147,6 +148,14 @@ button {
   }
 }
 
+#startPause {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+
 #controls {
   display: flex;
   flex-direction: column;
@@ -155,23 +164,7 @@ button {
     margin: 10px auto;
     padding: 10px 20px;
     cursor: pointer;
-
   }
-
-  // #start {
-  //   font-family: Lobster;
-  //   font-weight: lighter;
-  //   background-color: $border;
-  //   border: 5px solid $background;
-  //   transition: all .3s;
-  //   color: $background;
-  //   &:hover {
-  //     background: $background;
-  //     color: $text;
-  //     border: 5px solid $text;
-  //   }
-  // }
-
   #restart {
     text-decoration: none;
     color: $text;

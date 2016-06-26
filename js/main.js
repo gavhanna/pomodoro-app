@@ -88,6 +88,7 @@ var playPause = function(){
       clearInterval(counter);
       running = false;
     }
+    $("#startPause").css("visibility", "visible");
 }
 $("#start").click(playPause);
 $("#timerCircle").click(playPause);
