@@ -1,3 +1,8 @@
+$background: white;
+$text: black;
+$button: #000;
+$border: #000;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,12 +13,13 @@
 }
 
 body {
-  background-color: #FF9871;
+  background-color: $background;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
   min-width: 100vw;
+  color: $text;
 }
 
 .roundyCorners {
@@ -30,14 +36,23 @@ body {
 
 #title {
   font-family: 'Lobster', cursive;
+  text-align: center;
   margin: 0 auto;
-  color: #111;
+  color: $text;
   font-size: 4rem;
   font-weight: lighter;
-  border-bottom: 1px solid red;
-  border-top: 1px solid red;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
   border-radius: 30px;
   padding: 0px 20px;
+  position: relative;
+  span {
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+  }
 }
 
 button {
@@ -52,7 +67,14 @@ button {
   margin: 0 auto;
   span, button {
     margin: 10px;
-    //padding: 10px;
+    color: $button;
+  }
+  span {
+
+  }
+  button {
+    color: $border;
+    cursor: pointer;
   }
 }
 
@@ -60,17 +82,17 @@ button {
   font-size: 2rem;
 }
 
-#reset {
-  margin: 0 auto;
-  font-size: 15px;
-  padding: 20px;
+#break, #work {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 20px;
 }
 
 #timerContainer {
   cursor: pointer;
-  border: 8px solid tomato;
-  border-top: 8px solid tomato;
-  border-bottom: 8px solid tomato;
+  border: 8px solid $border;
+  border-top: 8px solid $border;
+  border-bottom: 8px solid $border;
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -80,13 +102,13 @@ button {
   margin: 0 auto;
   transition: all .2s;
   &:hover {
-    border-left: 2px solid tomato;
-    border-right: 2px solid tomato;
+    border-left: 2px solid $border;
+    border-right: 2px solid $border;
   }
 }
 
 #timerCircle {
-  background: radial-gradient(ellipse at center, #FF9871 20%, firebrick 100%);
+  background: radial-gradient(ellipse at center, $background 1%, red 100%);
   cursor: pointer;
   margin-top: 10px;
   display: flex;
@@ -129,13 +151,14 @@ button {
   #start {
     font-family: Lobster;
     font-weight: lighter;
-    background-color: lighten(yellow, 30%);
-    border: 5px solid #FF9871;
+    background-color: $border;
+    border: 5px solid $background;
     transition: all .3s;
+    color: $background;
     &:hover {
-      background: orange;
-      color: black;
-      border: 5px solid yellow;
+      background: $background;
+      color: $text;
+      border: 5px solid $text;
     }
   }
 }

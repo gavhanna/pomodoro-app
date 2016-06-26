@@ -46,14 +46,6 @@ workPlusButton.on("click", function(){
   }
 });
 
-$("#reset").on("click", function(){
-  breakTime = 5;
-  workTime = 25;
-  $("#breakTime").text(breakTime);
-  $("#workTime").text(workTime);
-  $("#timer").text(workTime + ":00");
-});
-
 // Timer -----------------------------
 
 var countdown = function(){
